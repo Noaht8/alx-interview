@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module which contains minoperations function"""
+"""Module which contains minOperations function"""
 
 def minOperations(n):
     """
