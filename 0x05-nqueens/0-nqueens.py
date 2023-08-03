@@ -1,7 +1,6 @@
-#!/usr/bin/python3
-"""Solves N Queens Puzzle"""
-import sys
+#!/usr/bin/env python
 
+import sys
 
 def is_safe(board, row, col):
     # Check if there is a queen in the same column
@@ -29,7 +28,6 @@ def is_safe(board, row, col):
 
     return True
 
-
 def solve_nqueens(n):
     def backtrack(board, row):
         if row == n:
@@ -44,7 +42,6 @@ def solve_nqueens(n):
     board = [-1] * n
     backtrack(board, 0)
     return solutions
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
